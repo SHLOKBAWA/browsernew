@@ -47,7 +47,11 @@ class Footer extends Page{
 
 class Nav extends Page{
     render(){
-        
+        let sMenu = "";
+        for(let n = 0; n < aPages.length; n++){
+
+              sMenu += `<li><a href="#${aPages[n].title}">${aPages[n].title}</a></li>`;
+        }
         $("nav").html(`
         <div class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="navbar-header">
@@ -62,11 +66,7 @@ class Nav extends Page{
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 
-                <li><a href="#about">About</a>
-                </li>
-                <li><a href="#contact">Contact</a>
-                </li>
-                
+               ${sMenu}
             </ul>
         </div>
 
