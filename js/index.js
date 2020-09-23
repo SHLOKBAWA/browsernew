@@ -34,7 +34,7 @@ class Article extends Page{
         }
     }
 }
-const sName = "Shloksterssss Bawas";
+const sName = "Shloksterssss";
 class Footer extends Page{
     render(){
 
@@ -48,7 +48,7 @@ class Footer extends Page{
 class Nav extends Page{
     render(){
         let sMenu = "";
-        for(let n = 0; n < aPages.length; n++){
+        for(let n = 1; n < aPages.length; n++){
 
               sMenu += `<li><a href="#${aPages[n].title}">${aPages[n].title}</a></li>`;
         }
