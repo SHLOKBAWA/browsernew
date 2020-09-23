@@ -34,7 +34,7 @@ class Article extends Page{
         }
     }
 }
-const sName = "Shloksterssss";
+const sName = "Shloksterssss bawa";
 class Footer extends Page{
     render(){
 
